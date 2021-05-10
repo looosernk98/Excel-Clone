@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    height: 25px;
+    background: yellow;
+}
+
+.menu-options{
+    height: 35px;
+    background: lightblue;
+}
+
+.calculation{
+    height: 25px;
+    background: lightgreen;
+    display: flex;
+    border-bottom: 1px solid;
+}
+
+.content{
+    height: calc(100vh - 110px);
+    overflow: auto;
+    position: relative;
+}
+.sheets{   
+    height: 25px; 
+    background: lightcoral;
+}
+
+.row{
+    display: flex;
+}
+.cell{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    min-height: 20px;
+    min-width: 70px;
+    outline: none;
+}
+.cells{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+.top-left-cell{
+    height: 20px;
+    width: 20px;
+    background: lightgray;
+    position: absolute;
+    z-index: 3;
+}
+.top-row{
+    display: flex;
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    background: white;
+}
+.top-row-cell{
+    min-width: 70px;
+    min-height: 20px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    text-align: center;
+}
+.left-col{
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+    background: white;
+    top: 20px;
+}
+.left-col-cell{
+    height: 20px; 
+    width: 20px;  
+    border-right: 1px solid; 
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: smaller;
+}
+#address{
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: lightgray
+}
+#formula{
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
